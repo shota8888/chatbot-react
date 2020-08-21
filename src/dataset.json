@@ -1,0 +1,68 @@
+{
+  "init": {
+    "answers": [
+      { "content": "airouってなに？", "nextId": "what_airou" },
+      {
+        "content": "どういう活動しているの？",
+        "nextId": "active"
+      },
+      { "content": "どういうの作ってるの？", "nextId": "portfolio" },
+      { "content": "airouに入りたい！", "nextId": "join" }
+    ],
+    "question": "こんにちは！airouへのご用件はなんでしょうか？"
+  },
+  "what_airou": {
+    "answers": [
+      { "content": "どういうの作ってるの？", "nextId": "portfolio" },
+      { "content": "airouに入りたい！", "nextId": "join" },
+      { "content": "公式サイトを見る", "nextId": "https://airou.work/" },
+      { "content": "その他", "nextId": "others" }
+    ],
+    "question": "airouは東京理科大学のプログラミングサークルです！Web開発をメインに行っています．"
+  },
+  "active": {
+    "answers": [
+      { "content": "どういうの作ってるの？", "nextId": "portfolio" },
+      { "content": "airouに入りたい！", "nextId": "join" },
+      { "content": "公式サイトを見る", "nextId": "https://airou.work/" },
+      { "content": "その他", "nextId": "others" }
+    ],
+    "question": "このサークルでは新入部員ひとりひとりにメンター(教えてくれる人)を用意して、プログラミング学習を進めていきます。Webをメインにデザインからサーバサイドまで幅広く学ぶことができるので、1人でサービスを作る力も身につきます！"
+  },
+  "portfolio": {
+    "answers": [
+      {
+        "content": "理科大新歓サイトを見る",
+        "nextId": "https://xn--efv88j.xn--pss383de8d.com/"
+      },
+      {
+        "content": "CLASS非公式アプリを見る（IOS）",
+        "nextId": "https://apps.apple.com/jp/app/tus-class-%E9%9D%9E%E5%85%AC%E5%BC%8F/id1513692491"
+      },
+      {
+        "content": "CLASS非公式アプリ見る（Android）",
+        "nextId": "https://play.google.com/store/apps/details?id=com.huhu.tusclass"
+      },
+      {
+        "content": "最初の質問に戻る",
+        "nextId": "init"
+      }
+    ],
+    "question": "理科大新歓サイトやCLASSの非公式アプリもメンバーが作成しました！"
+  },
+  "join": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "DMする", "nextId": "https://twitter.com/airou_tus" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "お問い合わせフォームまたはTwitterのDMからお問い合わせください😌"
+  },
+  "others": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "その他についてですね。コチラからお問い合わせできます"
+  }
+}

@@ -8,6 +8,7 @@ import Airou from "../assets/img/airou.png";
 const Chat = (props) => {
   const isQuestion = props.type === "question";
   const classes = isQuestion ? "p-chat__row" : "p-chat__reverse";
+  const bubbleColor = isQuestion ? "p-chat__q__bubble" : "p-chat__a__bubble";
 
   return (
     <ListItem className={classes}>
@@ -18,7 +19,7 @@ const Chat = (props) => {
           <Avatar alt="icon" src={NoProfile} />
         )}
       </ListItemAvatar>
-      <div className="p-chat__bubble">{props.text}</div>
+      <div className={bubbleColor}>{props.text}</div>
     </ListItem>
   );
 };

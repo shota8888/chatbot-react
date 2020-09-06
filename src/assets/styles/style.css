@@ -28,7 +28,19 @@
   height: 192px;
 }
 
-.p-chat__bubble {
+.p-chat__a__bubble {
+  background: rgb(243, 243, 243);
+  border-radius: 4px;
+  color: #42210b;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  max-width: 80%;
+  width: auto;
+}
+
+.p-chat__q__bubble {
   background: #faf6dd;
   border-radius: 4px;
   color: #42210b;

@@ -21,7 +21,7 @@ const App = () => {
     setOpen(false);
   }, [setOpen]);
 
-  // 新しいチャットを追加するCallback関数
+  // 新しいチャットを追加するCallback関数;
   const addChats = useCallback(
     (chat) => {
       setChats((prevChats) => {

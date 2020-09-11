@@ -14,27 +14,27 @@ const FormDialog = (props) => {
 
   const inputName = useCallback(
     (event) => {
-      setName({ name: event.target.value });
+      setName(event.target.value);
     },
-    [setDescription]
+    [setName]
   );
 
   const inputEmail = useCallback(
     (event) => {
-      setEmail({ email: event.target.value });
+      setEmail(event.target.value);
     },
     [setEmail]
   );
 
   const inputDescription = useCallback(
     (event) => {
-      setDescription({ description: event.target.value });
+      setDescription(event.target.value);
     },
     [setDescription]
   );
 
   const validateEmailFormat = (email) => {
-    const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     return regex.test(email);
   };
 
